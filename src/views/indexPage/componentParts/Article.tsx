@@ -6,8 +6,11 @@ const Article = () => {
         padding: 10px;
 
         background-color: #0000000c;
+        border-radius: 5px;
 
         .series_name {
+            margin-bottom: 4px;
+
             color: #00000099;
             font-weight: 700;
         }
