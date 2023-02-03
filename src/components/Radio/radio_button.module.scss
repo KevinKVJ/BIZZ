@@ -1,0 +1,7 @@
+$border: var(--radio-button-border);
+
+.radio-button {
+    &:focus {
+        border: $border;
+    }
+}

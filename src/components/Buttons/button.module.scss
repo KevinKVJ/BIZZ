@@ -1,0 +1,30 @@
+$font-size: var(--button_font-size);
+$bg-color: var(--button_bkg-color);
+$size-factor: var(--button_size);
+// $radius: var(--button_radium);
+/* '--button_bkg-color': 'red',
+                '--button_font-size' */
+.base-button {
+    border: none;
+
+    box-sizing: content-box;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: $font-size;
+    border-radius: 6px;
+    padding: calc($size-factor * $font-size) calc(2 * $size-factor * $font-size);
+    background-color: $bg-color;
+    width: fit-content;
+
+    cursor: pointer;
+    user-select: none;
+
+    // &:focus {
+    //     outline: 2px solid #000;
+    // }
+
+    .base-button_content {
+        text-align: left;
+    }
+}
