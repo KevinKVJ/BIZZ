@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+
 import ColumnSplitLine from './ColumnSplitLine';
 
 const Navbar = () => {
@@ -52,6 +53,8 @@ const Navbar = () => {
             display: flex;
             align-items: center;
             column-gap: 15px;
+            flex-shrink: 0;
+            flex-grow: 0;
             .user {
                 width: 36px;
                 height: 36px;
