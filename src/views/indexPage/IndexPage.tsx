@@ -1,15 +1,15 @@
 import { css } from '@emotion/react';
 
-import Article from './componentParts/Article';
-import ArticleSection from './componentParts/ArticleSection';
-import Navbar from './componentParts/Navbar';
+import Navbar from '../common/Navbar';
+import Article from '../common/Article';
+import ArticleSection from '../common/ArticleSection';
 
 const IndexPage = () => {
     const indexPageStyles = css`
         > .content {
             max-width: 1240px;
             /* outline: 1px solid; */
-            padding: 20px 0;
+            padding: 50px 20px;
             margin: 0 auto;
 
             .followings {
