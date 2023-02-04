@@ -20,6 +20,9 @@ const ProfileBanner = () => {
         > .info {
             flex-grow: 1;
             flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
             .title {
                 font-size: 20px;
                 font-weight: 700;
@@ -35,6 +38,8 @@ const ProfileBanner = () => {
                 column-gap: 5px;
 
                 font-size: 11px;
+                color: #0000007f;
+                font-weight: 800;
             }
         }
 
