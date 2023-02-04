@@ -30,6 +30,7 @@ const Navbar = () => {
 
                 display: flex;
 
+                font-size: 14px;
                 color: #ffffff;
                 justify-content: space-evenly;
                 align-items: center;
@@ -86,6 +87,7 @@ const Navbar = () => {
                 flex-grow: 0;
 
                 background-color: #1687a7;
+                font-size: 14px;
                 color: #ffffff;
             }
         }
