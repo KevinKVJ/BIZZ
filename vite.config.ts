@@ -17,6 +17,9 @@ const reactSetting: Options = {
 // https://vitejs.dev/config/
 export default defineConfig({
     base: './',
+    server: {
+        host: "0.0.0.0",
+    },
     plugins: [
         react(reactSetting),
         WindiCSS(),
