@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import ColumnSplitLine from '../indexPage/componentParts/ColumnSplitLine';
+import ColumnSplitLine from './componentParts/ColumnSplitLine';
 
 const Navbar = () => {
     const navbarStyles = css`

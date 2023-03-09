@@ -1,9 +1,8 @@
 import { RouteProps } from 'react-router-dom';
 
-import IndexPage from '@/views/indexPage/IndexPage';
-import ProfilePage from '@/views/profilePage/ProfilePage';
-
-// import IndexPage from '@/views/IndexPage/IndexPage';
+import ArticlePage from '@/views/ArticlePage/ArticlePage';
+import IndexPage from '@/views/IndexPage/IndexPage';
+import ProfilePage from '@/views/ProfilePage/ProfilePage';
 
 const routeInfo: RouteProps[] = [
     {
@@ -13,6 +12,10 @@ const routeInfo: RouteProps[] = [
     {
         path: '/profile',
         element: <ProfilePage />,
+    },
+    {
+        path: '/article',
+        element: <ArticlePage />,
     },
 ];
 
