@@ -10,6 +10,64 @@ const ArticlePage = () => {
 
         > .article_main {
             min-height: calc(100vh - 50px);
+            max-width: 1240px;
+            margin: 0 auto;
+
+            display: flex;
+            column-gap: 25px;
+
+            .article_aside {
+                flex: 0 0 300px;
+                max-width: 300px;
+                background-color: skyblue;
+            }
+
+            .article_content {
+                flex-grow: 1;
+                flex-shrink: 0;
+                
+                .content_head {
+                    margin-bottom: 20px;
+    
+                    .series_title {
+                        color: #00000099;
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+                    .article_title {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                    .tags {
+                        font-size: 12px;
+                        color: #1687a7;
+                    }
+    
+                    .desc {
+                        font-size: 12px;
+                    }
+    
+                    .info {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+    
+                    .various_count {
+                        display: flex;
+                        column-gap: 10px;
+    
+                        .icon {
+                            width: 20px;
+                            height: 20px;
+                            background-color: #000000;
+                        }
+                    }
+                }
+                .content_body {
+                    min-height: 500px;
+                    background-color: #fff;
+                }
+            }
         }
     `;
     return (
