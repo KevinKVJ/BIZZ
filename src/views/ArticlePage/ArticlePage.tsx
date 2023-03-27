@@ -1,8 +1,7 @@
-// import React from 'react';
-
 import { css } from '@emotion/react';
 
 import Navbar from '../common/Navbar';
+import CommentsArea from './page_parts/comments_area/CommentsArea';
 
 const ArticlePage = () => {
     const articlePage = css`
@@ -12,6 +11,7 @@ const ArticlePage = () => {
             min-height: calc(100vh - 50px);
             max-width: 1240px;
             margin: 0 auto;
+            padding-top: 50px;
 
             display: flex;
             column-gap: 25px;
@@ -25,10 +25,13 @@ const ArticlePage = () => {
             .article_content {
                 flex-grow: 1;
                 flex-shrink: 0;
-                
+
                 .content_head {
                     margin-bottom: 20px;
-    
+
+                    > div {
+                        margin: 3px 0;
+                    }
                     .series_title {
                         color: #00000099;
                         font-weight: 700;
@@ -37,25 +40,35 @@ const ArticlePage = () => {
                     .article_title {
                         font-size: 22px;
                         font-weight: 600;
+
+                        padding: 5px 0;
                     }
                     .tags {
                         font-size: 12px;
                         color: #1687a7;
                     }
-    
+
                     .desc {
                         font-size: 12px;
                     }
-    
-                    .info {
+
+                    .post-info_operations {
+                        margin-top: 20px;
+
                         display: flex;
                         justify-content: space-between;
                     }
-    
+
+                    .count_and_edited_date {
+                        font-size: 10.5px;
+                        font-weight: bold;
+                        color: #00000099;
+                    }
+
                     .various_count {
                         display: flex;
                         column-gap: 10px;
-    
+
                         .icon {
                             width: 20px;
                             height: 20px;
@@ -84,7 +97,7 @@ const ArticlePage = () => {
                             #newspaper #forex #strong #streetwear +
                         </div>
                         <div className='desc'>Some brief description of the article</div>
-                        <div className='info'>
+                        <div className='post-info_operations'>
                             <div className='count_and_edited_date'>
                                 3559 characters, last edited on November 28, 2022
                             </div>
@@ -105,11 +118,7 @@ const ArticlePage = () => {
                         </div>
                     </div>
                     <div className='content_body'></div>
-                    <div className='content_comment'>
-                        <div className='comment_title'></div>
-                        <div className='add_comment'></div>
-                        <div className='comment_list'></div>
-                    </div>
+                    <CommentsArea />
                 </div>
                 <aside className='article_aside'>
                     <div className='user_info_block'></div>
