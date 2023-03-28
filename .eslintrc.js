@@ -116,6 +116,7 @@ module.exports = {
             1,
             { extensions: ['.js', '.jsx', '.tsx', '.ts'] },
         ],
+        'react/no-unknown-property': ['error', { ignore: ['css'] }],
         'no-console': ['warn', { allow: ['warn', 'error'] }],
         // 'multiline-ternary': ['error', 'never'],
     },

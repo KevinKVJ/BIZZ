@@ -2,6 +2,7 @@ import { css } from '@emotion/react';
 
 import Navbar from '../common/Navbar';
 import CommentsArea from './page_parts/comments_area/CommentsArea';
+import AsideArea from './page_parts/side_area/AsideArea';
 
 const ArticlePage = () => {
     const articlePage = css`
@@ -11,24 +12,25 @@ const ArticlePage = () => {
             min-height: calc(100vh - 50px);
             max-width: 1240px;
             margin: 0 auto;
-            padding-top: 50px;
+            padding: 50px 20px;
 
             display: flex;
+            justify-content: space-between;
             column-gap: 25px;
 
-            .article_aside {
-                flex: 0 0 300px;
-                max-width: 300px;
-                background-color: skyblue;
-            }
-
             .article_content {
-                flex-grow: 1;
-                flex-shrink: 0;
+                /* word-wrap: break-word; */
+                /* width: 0; */
+                /* flex-basis: 0%; */
+                /* flex-shrink: 0; */
+                /* flex-grow: 1; */
+
+                flex: 1 0 0%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
 
                 .content_head {
-                    margin-bottom: 20px;
-
                     > div {
                         margin: 3px 0;
                     }
@@ -120,11 +122,7 @@ const ArticlePage = () => {
                     <div className='content_body'></div>
                     <CommentsArea />
                 </div>
-                <aside className='article_aside'>
-                    <div className='user_info_block'></div>
-                    <div className='series_list'></div>
-                    <div className='article_from_users'></div>
-                </aside>
+                <AsideArea />
             </main>
         </div>
     );

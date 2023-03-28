@@ -5,14 +5,14 @@ interface ICommentAvatar {
     background?: string;
 }
 
-const CommentAvatar: FC<ICommentAvatar> = () => {
-    const commentAvatarStyle = css`
+const ArticlePageAvatar: FC<ICommentAvatar> = () => {
+    const ArticlePageAvatarStyle = css`
         width: 50px;
         height: 50px;
         border-radius: 1000px;
         background-color: #dd0a35;
     `;
-    return <div className='comment_avatar_wrapper' css={commentAvatarStyle}></div>;
+    return <div className='article_page_wrapper' css={ArticlePageAvatarStyle}></div>;
 };
 
-export default CommentAvatar;
+export default ArticlePageAvatar;
